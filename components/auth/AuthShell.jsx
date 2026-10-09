@@ -14,6 +14,7 @@ export default function AuthShell({ title, subtitle, children }) {
           alt=""
           width={315}
           height={263}
+          loading="eager"
           className="relative mt-auto h-auto w-[min(300px,70%)] self-end"
         />
       </section>

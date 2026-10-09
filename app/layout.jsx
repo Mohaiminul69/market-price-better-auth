@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
     <html
       lang="bn"
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
       className={`${caprasimo.variable} ${baloo.variable} ${figtree.variable} ${hind.variable} antialiased`}
     >
       <body className="flex min-h-screen flex-col" suppressHydrationWarning>

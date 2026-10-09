@@ -48,7 +48,7 @@ export default function Hero() {
           alt="বাজারের ঝুড়ি"
           width={315}
           height={263}
-          priority
+          preload
           className="relative h-auto w-[min(320px,75vw)] animate-float"
         />
       </div>

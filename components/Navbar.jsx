@@ -16,7 +16,7 @@ export default async function Navbar() {
         <div className="flex items-center justify-between gap-4 py-3.5">
           <Link href="/" className="flex min-w-0 items-center gap-3">
             <span className="grid size-[46px] shrink-0 place-items-center rounded-full bg-g-300 shadow-sm">
-              <Image src="/bazar-hero.png" alt="বাজার দর লোগো" width={315} height={263} priority className="h-auto w-[38px]" />
+              <Image src="/bazar-hero.png" alt="বাজার দর লোগো" width={315} height={263} preload className="h-auto w-[38px]" />
             </span>
             <span className="min-w-0">
               <span className="block font-heading text-2xl leading-none font-extrabold">
