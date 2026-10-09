@@ -1,4 +1,5 @@
 import { Baloo_Da_2, Caprasimo, Figtree, Hind_Siliguri } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -28,6 +29,10 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="container-page flex-1 pt-[clamp(20px,4vw,40px)] pb-16">{children}</main>
         <Footer />
+        <Toaster
+          position="top-center"
+          toastOptions={{ style: { borderRadius: 999, background: "#f9f4ed", color: "#201e1d", fontWeight: 600 } }}
+        />
       </body>
     </html>
   );
