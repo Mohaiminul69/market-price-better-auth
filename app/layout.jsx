@@ -1,5 +1,7 @@
+import { Suspense } from "react";
 import { Baloo_Da_2, Caprasimo, Figtree, Hind_Siliguri } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import AuthToast from "@/components/AuthToast";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -34,6 +36,9 @@ export default function RootLayout({ children }) {
           position="top-center"
           toastOptions={{ style: { borderRadius: 999, background: "#f9f4ed", color: "#201e1d", fontWeight: 600 } }}
         />
+        <Suspense fallback={null}>
+          <AuthToast />
+        </Suspense>
       </body>
     </html>
   );

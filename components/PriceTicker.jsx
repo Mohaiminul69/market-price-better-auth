@@ -2,8 +2,8 @@ import { getProducts } from "@/lib/api";
 import { formatPct, formatPrice, unitShort } from "@/lib/bn";
 
 const CHANGE_STYLE = {
-  up: { sign: "▲", color: "text-a-300" },
-  down: { sign: "▼", color: "text-g-300" },
+  up: { sign: "▲", color: "text-green-300" },
+  down: { sign: "▼", color: "text-red-300" },
   flat: { sign: "—", color: "text-n-300" },
 };
 

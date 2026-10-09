@@ -31,7 +31,12 @@ const PROVIDERS = [
 export default function SocialButtons({ callbackURL = "/" }) {
   async function handleSocial(provider) {
     const toastId = toast.loading("লগইন পেজে নিয়ে যাওয়া হচ্ছে…");
-    const { error } = await authClient.signIn.social({ provider, callbackURL });
+    const separator = callbackURL.includes("?") ? "&" : "?";
+    const { error } = await authClient.signIn.social({
+      provider,
+      callbackURL: `${callbackURL}${separator}auth=social`,
+      errorCallbackURL: "/signin?auth=error",
+    });
     if (error) toast.error(error.message || "সোশ্যাল লগইন ব্যর্থ হয়েছে", { id: toastId });
   }
 

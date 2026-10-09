@@ -15,8 +15,8 @@ export async function generateMetadata({ params }) {
 }
 
 const PRICE_BADGE = {
-  up: "bg-a-300 text-a-900",
-  down: "bg-g-300 text-g-900",
+  up: "bg-green-200 text-green-900",
+  down: "bg-red-200 text-red-900",
   flat: "bg-n-300 text-n-900",
 };
 

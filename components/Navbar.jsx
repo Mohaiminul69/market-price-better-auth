@@ -20,7 +20,7 @@ export default async function Navbar() {
             </span>
             <span className="min-w-0">
               <span className="block font-heading text-2xl leading-none font-extrabold">
-                বাজার দর
+                🛒 বাজার দর
               </span>
               <span className="block truncate text-xs text-n-700">
                 {bnDate()}

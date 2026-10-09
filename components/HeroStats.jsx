@@ -10,10 +10,10 @@ export default async function HeroStats() {
 
   return (
     <div className="flex flex-wrap gap-2">
-      <span className="rounded-full bg-a-100 px-3.5 py-2 text-sm font-semibold text-a-800">
+      <span className="rounded-full bg-green-100 px-3.5 py-2 text-sm font-semibold text-green-800">
         ▲ {toBn(upCount)}টি বেড়েছে
       </span>
-      <span className="rounded-full bg-g-100 px-3.5 py-2 text-sm font-semibold text-g-800">
+      <span className="rounded-full bg-red-100 px-3.5 py-2 text-sm font-semibold text-red-700">
         ▼ {toBn(downCount)}টি কমেছে
       </span>
     </div>

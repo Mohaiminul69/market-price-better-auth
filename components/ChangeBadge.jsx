@@ -2,8 +2,8 @@ import { formatPct } from "@/lib/bn";
 import { cn } from "@/lib/utils";
 
 const STYLES = {
-  up: { sign: "▲", className: "bg-a-200 text-a-800" },
-  down: { sign: "▼", className: "bg-g-200 text-g-800" },
+  up: { sign: "▲", className: "bg-green-100 text-green-800" },
+  down: { sign: "▼", className: "bg-red-100 text-red-700" },
   flat: { sign: "—", className: "bg-n-200 text-n-800" },
 };
 

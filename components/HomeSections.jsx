@@ -22,7 +22,7 @@ export default async function HomeSections() {
       <section className="flex flex-col gap-5">
         <SectionHeader
           icon={<TrendingUp className="size-5" strokeWidth={2.75} />}
-          iconClassName="bg-brand"
+          iconClassName="bg-green-600"
           title="আজ দাম বেড়েছে ▲"
           note="গতকালের তুলনায় সবচেয়ে বেশি বেড়েছে"
         />
@@ -32,7 +32,7 @@ export default async function HomeSections() {
       <section className="flex flex-col gap-5">
         <SectionHeader
           icon={<TrendingDown className="size-5" strokeWidth={2.75} />}
-          iconClassName="bg-sage"
+          iconClassName="bg-red-600"
           title="আজ দাম কমেছে ▼"
           note="গতকালের তুলনায় সবচেয়ে বেশি কমেছে"
         />
