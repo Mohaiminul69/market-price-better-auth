@@ -1,7 +1,10 @@
+import { Suspense } from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { bnDate } from "@/lib/bn";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
+import HeroStats from "@/components/HeroStats";
 
 export default function Hero() {
   return (
@@ -17,11 +20,23 @@ export default function Hero() {
           চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও মসলার দাম — বাজারভিত্তিক বিস্তারিত, গড়, সর্বনিম্ন-সর্বাধিক এবং দামের
           পরিবর্তন এক জায়গায়।
         </p>
-        <Button asChild size="lg" className="shadow-md">
-          <a href="#সব-পণ্য">
-            সব পণ্য দেখুন <ArrowRight strokeWidth={2.75} />
-          </a>
-        </Button>
+        <div className="flex flex-wrap items-center gap-3">
+          <Button asChild size="lg" className="shadow-md">
+            <a href="#সব-পণ্য">
+              সব পণ্য দেখুন <ArrowRight strokeWidth={2.75} />
+            </a>
+          </Button>
+          <Suspense
+            fallback={
+              <div className="flex gap-2">
+                <Skeleton className="h-9 w-28 rounded-full bg-n-200" />
+                <Skeleton className="h-9 w-28 rounded-full bg-n-200" />
+              </div>
+            }
+          >
+            <HeroStats />
+          </Suspense>
+        </div>
       </div>
 
       <div className="relative grid min-h-[260px] flex-[1_1_260px] place-items-center">
